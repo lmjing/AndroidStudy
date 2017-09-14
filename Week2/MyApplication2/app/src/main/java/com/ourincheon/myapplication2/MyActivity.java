@@ -12,6 +12,7 @@ public class MyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my);
 
         TextView tv = (TextView)findViewById(R.id.myTextView);
-        tv.setText("여기서도 바뀌네"); // android:text = " ... "과 동일
+        String str = getString(R.string.my_msg);
+        tv.setText(str); // android:text = " ... "과 동일
     }
 }

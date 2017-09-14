@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">내 첫번째 앱</string>
-    <string name="hello_str">어서 들어와</string>
+    <string name="my_msg">어서 들어와</string>
 </resources>

@@ -10,7 +10,7 @@
         android:id="@+id/myTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_str"
+        android:text="@string/my_msg"
         android:textSize="30sp"
         android:textColor="@color/colorRed"
         app:layout_constraintBottom_toBottomOf="parent"
