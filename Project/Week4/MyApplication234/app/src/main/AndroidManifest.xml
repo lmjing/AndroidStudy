@@ -18,7 +18,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".exerciseActivity1" />
-        <activity android:name=".exerciseActivity2"></activity>
     </application>
 
 </manifest>
