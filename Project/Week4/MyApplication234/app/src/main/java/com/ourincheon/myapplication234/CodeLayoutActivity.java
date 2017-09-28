@@ -7,15 +7,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class Day2Activity extends AppCompatActivity {
+public class CodeLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_day2);
+//        setContentView(R.layout.activity_layout);
 
         // context = 화면 = UI = Activity
-        LinearLayout lin = new LinearLayout(this); // this = Day2Activity.this
+        LinearLayout lin = new LinearLayout(this); // this = CodeLayoutActivity.this
 
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
