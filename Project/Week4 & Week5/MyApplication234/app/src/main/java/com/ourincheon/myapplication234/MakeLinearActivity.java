@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class CodeLayoutActivity extends AppCompatActivity {
+public class MakeLinearActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,7 @@ public class CodeLayoutActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_layout);
 
         // context = 화면 = UI = Activity
-        LinearLayout lin = new LinearLayout(this); // this = CodeLayoutActivity.this
+        LinearLayout lin = new LinearLayout(this); // this = MakeLinearActivity.this
 
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,

@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".CodeLayoutActivity">
+        <activity android:name=".MakeLinearActivity">
         </activity>
         <activity android:name=".exerciseActivity1" >
+
+        </activity>
+        <activity android:name=".MakeRelativeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
