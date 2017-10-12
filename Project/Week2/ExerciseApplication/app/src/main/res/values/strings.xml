@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ExerciseApplication</string>
+    <string name="button_string">Press Me!</string>
+</resources>
