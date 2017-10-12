@@ -1,0 +1,7 @@
+<resources>
+    <string name="welcomeText">Welcome to Android App Development</string>
+    <string name="androidLogoText">Android logo</string>
+    <string name="smileBeeText">Smile bee</string>
+    <string name="app_name">내 첫번째 앱</string>
+    <string name="my_msg">어서 들어와</string>
+</resources>
