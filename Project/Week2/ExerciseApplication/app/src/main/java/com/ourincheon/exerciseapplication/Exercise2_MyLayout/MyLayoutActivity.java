@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 import com.ourincheon.exerciseapplication.R;
 
 public class MyLayoutActivity extends AppCompatActivity {
+    private final static float myEditTextWidth = 300;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,9 @@ public class MyLayoutActivity extends AppCompatActivity {
         editTextParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
         editTextParams.addRule(RelativeLayout.ABOVE, myButton.getId());
         myEditText.setLayoutParams(editTextParams);
+
+        int px = (int)getResources().getDimension(R.dimen.myEditTextWidth);
+        myEditText.setWidth(px);
 
         myLayout.addView(myButton);
         myLayout.addView(myEditText);
