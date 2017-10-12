@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title02"
+            android:textColor="#61380B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/shape_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author02"
+            android:textColor="#22741C"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/textbody1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/body02"
+            android:textColor="#61380B"
+            android:textSize="15sp"/>
+</LinearLayout>

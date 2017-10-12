@@ -11,14 +11,21 @@ import com.ourincheon.studyandroid.R;
  * Created by mijeong on 2017. 10. 12..
  */
 
-public class day1012_lab3lab4 extends AppCompatActivity {
+public class day1012_lab345 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 실습 3
 //        setContentView(R.layout.day1012_lab3);
+//        TextView poemBody1 = (TextView)findViewById(R.id.textbody1);
+//        poemBody1.setSelected(true);
 
-        setContentView(R.layout.day1012_lab4);
-        TextView poemBody1 = (TextView)findViewById(R.id.textbody1);
-        poemBody1.setSelected(true);
+        // 실습 4
+//        setContentView(R.layout.day1012_lab4);
+//        TextView poemBody1 = (TextView)findViewById(R.id.textbody1);
+//        poemBody1.setSelected(true);
+
+        // 실습 5
+        setContentView(R.layout.day1012_lab5);
     }
 }
