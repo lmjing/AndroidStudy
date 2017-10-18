@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Week5.day1012_lab345">
+        <activity android:name=".Week6.day1018_event">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
