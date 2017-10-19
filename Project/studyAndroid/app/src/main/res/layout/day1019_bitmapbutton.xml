@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <com.ourincheon.studyandroid.Week6.day1019_BitmapButton
         android:id="@+id/button17"
         android:layout_width="wrap_content"
@@ -10,4 +9,16 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="내 버튼" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button17"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:inputType="number"
+        android:text="Name" />
 </RelativeLayout>
