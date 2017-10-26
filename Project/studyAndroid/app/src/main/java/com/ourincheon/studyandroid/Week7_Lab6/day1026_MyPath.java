@@ -36,23 +36,23 @@ public class day1026_MyPath extends View {
         canvas.drawPath(mPath, paint);
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        float x = event.getX();
-        float y = event.getY();
-        int action = event.getAction();
-        switch (action) {
-            case MotionEvent.ACTION_DOWN:
-                mPath.moveTo(x, y); return true;
-            case MotionEvent.ACTION_MOVE:
-                mPath.lineTo(x, y); break;
-            case MotionEvent.ACTION_UP:
-                break;
-            default: return false;
-        }
-
-        //view를 상속받았기 때문에 인스턴스에서 접근하지 않아도 된다.
-        invalidate();
-        return true;
-    }
+//    @Override
+//    public boolean onTouchEvent(MotionEvent event) {
+//        float x = event.getX();
+//        float y = event.getY();
+//        int action = event.getAction();
+//        switch (action) {
+//            case MotionEvent.ACTION_DOWN:
+//                mPath.moveTo(x, y); return true;
+//            case MotionEvent.ACTION_MOVE:
+//                mPath.lineTo(x, y); break;
+//            case MotionEvent.ACTION_UP:
+//                break;
+//            default: return false;
+//        }
+//
+//        //view를 상속받았기 때문에 인스턴스에서 접근하지 않아도 된다.
+//        invalidate();
+//        return true;
+//    }
 }
