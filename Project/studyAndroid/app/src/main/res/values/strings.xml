@@ -52,4 +52,6 @@
     나는 사람이 적게 간 길을 택했노라고,\n
     그래서 모든 것이 달라졌다고.
     </string>
+    <string name="status_string">Status</string>
+    <string name="button_string">Press Me</string>
 </resources>
