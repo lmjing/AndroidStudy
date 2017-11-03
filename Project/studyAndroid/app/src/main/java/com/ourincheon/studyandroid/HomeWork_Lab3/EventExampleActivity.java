@@ -14,15 +14,24 @@ import com.ourincheon.studyandroid.R;
  */
 
 public class EventExampleActivity extends AppCompatActivity {
+    //Q3
+//        implements Button.OnClickListener {
+//        @Override
+//        public void onClick(View view) {
+//            TextView myTextView = (TextView)findViewById(R.id.myTextView);
+//            myTextView.setText("Button Clicked");
+//        }
+//    }
 
-    class MyListenerClass implements Button.OnClickListener {
-
-        @Override
-        public void onClick(View view) {
-            TextView textView = (TextView)findViewById(R.id.myTextView);
-            textView.setText("Button Clicked");
-        }
-    }
+    //Q2
+//    class MyListenerClass implements Button.OnClickListener {
+//
+//        @Override
+//        public void onClick(View view) {
+//            TextView myTextView = (TextView)findViewById(R.id.myTextView);
+//            myTextView.setText("Button Clicked");
+//        }
+//    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,14 +39,29 @@ public class EventExampleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_event_example);
 
         Button button = (Button)findViewById(R.id.myButton);
-        MyListenerClass listener = new MyListenerClass();
-        button.setOnClickListener(listener);
-//        button.setOnClickListener(new Button.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                TextView textView = (TextView)findViewById(R.id.myTextView);
-//                textView.setText("Button Clicked");
-//            }
-//        });
+
+
+//        Q2.
+//        MyListenerClass listener = new MyListenerClass();
+//        button.setOnClickListener(listener);
+        //Q3
+//        button.setOnClickListener(this);
+
+        button.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView myTextView = (TextView)findViewById(R.id.myTextView);
+                myTextView.setText("Button Clicked");
+            }
+        });
+
+        button.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                TextView myTextView = (TextView)findViewById(R.id.myTextView);
+                myTextView.setText("button pressed for a long time!");
+                return false;
+            }
+        });
     }
 }
