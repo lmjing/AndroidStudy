@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Week8.day1109_DialogActivity2">
+        <activity android:name=".Week9.day1115_TimePickerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
