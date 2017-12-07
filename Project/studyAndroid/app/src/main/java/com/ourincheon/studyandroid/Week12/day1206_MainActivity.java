@@ -12,6 +12,7 @@ public class day1206_MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new day1206_MyView(this));
+//        setContentView(new day1206_MyView(this));
+        setContentView(new day1207_MySurfaceView(this));
     }
 }
