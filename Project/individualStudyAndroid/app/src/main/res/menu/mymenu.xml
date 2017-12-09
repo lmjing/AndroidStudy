@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="apple"
+        android:id="@+id/apple"
+        android:icon="@mipmap/ic_launcher" />
+    <item
+        android:title="grape"
+        android:id="@+id/grape"
+        android:icon="@mipmap/ic_launcher"/>
+    <item
+        android:title="banna"
+        android:id="@+id/banna"
+        android:icon="@mipmap/ic_launcher"/>
+</menu>
