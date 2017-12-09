@@ -1,4 +1,4 @@
-package com.ourincheon.individualstudyandroid.Lesson7.FloatingContextMenu;
+package com.ourincheon.individualstudyandroid.Lesson7.Menu_and_ActionBar.FloatingContextMenu;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import com.ourincheon.individualstudyandroid.R;
  * Created by mijeong on 2017. 12. 9..
  */
 
-public class MainActivity extends AppCompatActivity implements View.OnLongClickListener{
+public class MainActivity_ActionMode extends AppCompatActivity implements View.OnLongClickListener{
 
     ActionMode mActionMode;
     TextView txtView;

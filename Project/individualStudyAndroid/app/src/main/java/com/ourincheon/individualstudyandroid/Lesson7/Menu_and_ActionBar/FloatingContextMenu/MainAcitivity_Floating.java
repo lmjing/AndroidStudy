@@ -1,4 +1,4 @@
-package com.ourincheon.individualstudyandroid.Lesson7.FloatingContextMenu;
+package com.ourincheon.individualstudyandroid.Lesson7.Menu_and_ActionBar.FloatingContextMenu;
 
 import android.graphics.Color;
 import android.os.Bundle;
