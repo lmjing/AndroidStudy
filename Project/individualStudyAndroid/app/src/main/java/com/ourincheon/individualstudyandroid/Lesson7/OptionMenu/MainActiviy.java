@@ -31,7 +31,7 @@ public class MainActiviy extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         //실습1 - 메뉴 따로 정의해서 생성하기
 //        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.mymenu, menu);
+//        inflater.inflate(R.menu.option_menu_mymenu, menu);
 
         //실습2 - 코드로 옵션 메뉴 생성하기
         MenuItem item1 = menu.add(0, FIRST_MENU, Menu.NONE, "apple");
