@@ -64,6 +64,24 @@ public class MainAcitivty extends AppCompatActivity {
                 createDialog(DIALOG_YES_NO_MESSAGE).show();
             }
         });
+
+        Button button3 = (Button)findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final CharSequence[] items = {"RED", "GREEN", "BLUE"};
+                new AlertDialog.Builder(MainAcitivty.this)
+                        .setTitle("Choose the color below")
+                        .setItems(items, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Toast.makeText(getApplicationContext(), items[i] + " selected", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setIcon(R.mipmap.ic_launcher)
+                        .show();
+            }
+        });
     }
 
     Dialog createDialog(int id) {
