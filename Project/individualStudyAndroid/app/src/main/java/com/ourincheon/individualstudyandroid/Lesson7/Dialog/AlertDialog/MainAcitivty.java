@@ -26,11 +26,17 @@ public class MainAcitivty extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder dialog = new AlertDialog.Builder(MainAcitivty.this);
-                dialog.setIcon(R.mipmap.ic_launcher);
-                dialog.setTitle("Message Board");
-                dialog.setMessage("Open the dialog");
-                dialog.show();
+//                AlertDialog.Builder dialog = new AlertDialog.Builder(MainAcitivty.this);
+//                dialog.setIcon(R.mipmap.ic_launcher);
+//                dialog.setTitle("Message Board");
+//                dialog.setMessage("Open the dialog");
+//                dialog.show();
+
+                new AlertDialog.Builder(MainAcitivty.this)
+                        .setIcon(R.mipmap.ic_launcher)
+                        .setTitle("Message Board")
+                        .setMessage("Open the dialog")
+                        .show();
             }
         });
     }
