@@ -1,4 +1,4 @@
-package com.ourincheon.individualstudyandroid.Lesson7.Menu_and_ActionBar.SnackBar;
+package com.ourincheon.individualstudyandroid.Lesson7.SnackBar;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
