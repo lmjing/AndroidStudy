@@ -1,5 +1,6 @@
 package com.ourincheon.individualstudyandroid.Lesson7.Dialog.AlertDialog;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,6 +18,7 @@ import com.ourincheon.individualstudyandroid.R;
 
 public class MainAcitivty extends AppCompatActivity {
 
+    static final int DIALOG_YES_NO_MESSAGE = 1;
     Button button;
 
     @Override
@@ -54,5 +56,37 @@ public class MainAcitivty extends AppCompatActivity {
                         .show();
             }
         });
+
+        Button button2 = (Button)findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                createDialog(DIALOG_YES_NO_MESSAGE).show();
+            }
+        });
+    }
+
+    Dialog createDialog(int id) {
+        switch (id) {
+            case DIALOG_YES_NO_MESSAGE:
+                final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Simple Question")
+                        .setMessage("Are you sure that you want to quit?")
+                        .setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.dismiss();
+                            }
+                        });
+                Dialog dialog = builder.create();
+                return dialog;
+        }
+        return null;
     }
 }
