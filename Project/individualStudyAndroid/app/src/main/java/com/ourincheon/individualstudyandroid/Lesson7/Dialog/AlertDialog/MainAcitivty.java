@@ -20,6 +20,7 @@ public class MainAcitivty extends AppCompatActivity {
 
     static final int DIALOG_YES_NO_MESSAGE = 1;
     Button button;
+    private int selected = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainAcitivty extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //실습1
 //                AlertDialog.Builder dialog = new AlertDialog.Builder(MainAcitivty.this);
 //                dialog.setIcon(R.mipmap.ic_launcher);
 //                dialog.setTitle("Message Board");
@@ -71,16 +73,41 @@ public class MainAcitivty extends AppCompatActivity {
             public void onClick(View view) {
 //                final CharSequence[] items = {"RED", "GREEN", "BLUE"};
                 final String[] items = getResources().getStringArray(R.array.colors);
+                //실습 3 & 3-1
+//                new AlertDialog.Builder(MainAcitivty.this)
+//                        .setTitle("Choose the color below")
+//                        .setItems(items, new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialogInterface, int i) {
+//                                Toast.makeText(getApplicationContext(), items[i] + " selected", Toast.LENGTH_SHORT).show();
+//                            }
+//                        })
+//                        .setIcon(R.mipmap.ic_launcher)
+//                        .show();
+
+                //실습 3-2
                 new AlertDialog.Builder(MainAcitivty.this)
                         .setTitle("Choose the color below")
-                        .setItems(items, new DialogInterface.OnClickListener() {
+                        .setIcon(R.mipmap.ic_launcher)
+                        .setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(getApplicationContext(), items[i] + " selected", Toast.LENGTH_SHORT).show();
+                                selected = i;
                             }
                         })
-                        .setIcon(R.mipmap.ic_launcher)
-                        .show();
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Toast.makeText(getApplicationContext(), items[selected] + " selected", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setNegativeButton("CANCLE", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.dismiss();
+                            }
+                        }).show();
+
             }
         });
     }
