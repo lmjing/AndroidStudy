@@ -36,6 +36,9 @@ public class MainAcitivty extends AppCompatActivity {
                         .setIcon(R.mipmap.ic_launcher)
                         .setTitle("Message Board")
                         .setMessage("Open the dialog")
+                        .setPositiveButton("YES", null)
+                        .setNegativeButton("NO", null)
+                        .setNeutralButton("CANCLE", null)
                         .show();
             }
         });
