@@ -69,7 +69,8 @@ public class MainAcitivty extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final CharSequence[] items = {"RED", "GREEN", "BLUE"};
+//                final CharSequence[] items = {"RED", "GREEN", "BLUE"};
+                final String[] items = getResources().getStringArray(R.array.colors);
                 new AlertDialog.Builder(MainAcitivty.this)
                         .setTitle("Choose the color below")
                         .setItems(items, new DialogInterface.OnClickListener() {
