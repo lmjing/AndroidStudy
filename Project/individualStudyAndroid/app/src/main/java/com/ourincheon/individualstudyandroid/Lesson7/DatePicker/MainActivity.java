@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.ourincheon.individualstudyandroid.R;
 
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * Created by mijeong on 2017. 12. 11..
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         datePicker.init(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth(), new DatePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(DatePicker datePicker, int year, int month, int day) {
-                textView.setText(String.format("%d-%d-%d",year,month,day));
+                textView.setText(String.format(Locale.KOREA, "%d-%d-%d",year,month,day));
             }
         });
     }
