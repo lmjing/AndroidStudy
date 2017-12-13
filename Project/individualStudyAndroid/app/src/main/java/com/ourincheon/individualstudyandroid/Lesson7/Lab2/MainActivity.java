@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.util.TimeUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateUtils;
 import android.view.View;
@@ -74,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 //매개변수!!!
                 return new DatePickerDialog(MainActivity.this, dateSetListener, mYear, mMonth, mDay);
             case TIME_DIALOG_ID:
+                // true : 24시간 , false: PM/AM 12시간
                 return new TimePickerDialog(MainActivity.this, timeSetListener, mHour, mMinute, false);
         }
         return null;
