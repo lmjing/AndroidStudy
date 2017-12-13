@@ -51,15 +51,15 @@ public class MainActivity extends AppCompatActivity {
                         String pw = pwEditText.getText().toString();
 
                         if (id.length() <= 0)
-                            Toast.makeText(getApplicationContext(), "id를 입력해주세요.",Toast.LENGTH_SHORT).show();
+                            showMessage("id를 입력해주세요.");
                         else if (pw.length() <= 0)
-                            Toast.makeText(getApplicationContext(), "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                            showMessage("비밀번호를 입력해주세요.");
                         else if (!id.equals("abcd"))
-                            Toast.makeText(getApplicationContext(), "id가 틀렸습니다.", Toast.LENGTH_SHORT).show();
+                            showMessage("id가 틀렸습니다.");
                         else if (!pw.equals("1111"))
-                            Toast.makeText(getApplicationContext(), "비밀번호가 틀렸습니다.", Toast.LENGTH_SHORT).show();
+                            showMessage("비밀번호가 틀렸습니다.");
                         else {
-                            Toast.makeText(getApplicationContext(), id + "님 환영합니다.", Toast.LENGTH_SHORT).show();
+                            showMessage(id + "님 환영합니다.");
                             dialog.dismiss();
                         }
                     }
@@ -67,5 +67,9 @@ public class MainActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
+    }
+
+    void showMessage(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 }
