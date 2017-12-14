@@ -1,4 +1,4 @@
-package com.ourincheon.individualstudyandroid.Lesson4_Layout;
+package com.ourincheon.individualstudyandroid.Lesson4_Layout.CodeLayout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
