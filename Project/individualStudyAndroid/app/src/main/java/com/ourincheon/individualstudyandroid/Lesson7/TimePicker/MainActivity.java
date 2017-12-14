@@ -23,7 +23,7 @@ import java.util.Locale;
 //    @Override
 //    protected void onCreate(@Nullable Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.timepicker_main_activity);
+//        setContentView(R.layout.lesson7_timepicker_main_activity);
 //
 //        timePicker = (TimePicker)findViewById(R.id.timePicker);
 //        textView = (TextView)findViewById(R.id.textView);
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements TimePicker.OnTime
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.timepicker_main_activity);
+        setContentView(R.layout.lesson7_timepicker_main_activity);
 
         timePicker = (TimePicker)findViewById(R.id.timePicker);
         textView = (TextView)findViewById(R.id.textView);

@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notification_main_activity);
+        setContentView(R.layout.lesson7_notification_main_activity);
 
         Button button = (Button)findViewById(R.id.button);
         button.setOnClickListener(this);

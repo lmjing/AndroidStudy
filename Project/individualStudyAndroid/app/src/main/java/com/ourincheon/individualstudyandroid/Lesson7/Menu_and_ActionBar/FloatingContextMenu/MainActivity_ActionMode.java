@@ -25,7 +25,7 @@ public class MainActivity_ActionMode extends AppCompatActivity implements View.O
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.context_menu_main_activity);
+        setContentView(R.layout.lesson7_context_menu_main_activity);
 
         txtView = (TextView)findViewById(R.id.textView);
         txtView.setOnLongClickListener(this);

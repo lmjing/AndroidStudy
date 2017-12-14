@@ -17,7 +17,6 @@ import com.ourincheon.individualstudyandroid.R;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.Locale;
 
 /**
  * Created by mijeong on 2017. 12. 13..
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.restaurant_reservation_main_activity);
+        setContentView(R.layout.lesson7_restaurant_reservation_main_activity);
 
         Button datePickerButton = (Button)findViewById(R.id.datePickerButton);
         Button timePickerButton = (Button)findViewById(R.id.timePickerButton);

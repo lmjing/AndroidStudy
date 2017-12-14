@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import com.ourincheon.individualstudyandroid.R;
 
-import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.datepicker_main_activity);
+        setContentView(R.layout.lesson7_datepicker_main_activity);
 
         final TextView textView = (TextView)findViewById(R.id.textView);
         DatePicker datePicker = (DatePicker)findViewById(R.id.datePicker);

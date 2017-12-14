@@ -25,7 +25,7 @@ public class MainAcitivity_Floating extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.context_menu_main_activity);
+        setContentView(R.layout.lesson7_context_menu_main_activity);
 
         txtView = (TextView)findViewById(R.id.textView);
         registerForContextMenu(txtView);

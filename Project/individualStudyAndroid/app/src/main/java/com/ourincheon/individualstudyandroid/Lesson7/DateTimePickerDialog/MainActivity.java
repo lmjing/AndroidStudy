@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.date_time_pickerdialog_main_activity);
+        setContentView(R.layout.lesson7_date_time_pickerdialog_main_activity);
 
         Button datePickerButton = (Button)findViewById(R.id.datePickerButton);
         Button timePickerButton = (Button)findViewById(R.id.timePickerButton);

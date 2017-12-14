@@ -25,7 +25,7 @@ public class MainAcitivty extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.alertdialog_main_activity);
+        setContentView(R.layout.lesson7_alertdialog_main_activity);
 
         button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
