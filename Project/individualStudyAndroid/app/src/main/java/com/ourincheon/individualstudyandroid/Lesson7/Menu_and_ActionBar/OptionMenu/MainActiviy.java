@@ -1,10 +1,8 @@
 package com.ourincheon.individualstudyandroid.Lesson7.OptionMenu;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -24,7 +22,7 @@ public class MainActiviy extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.option_menu_activity_main);
+        setContentView(R.layout.lesson7_option_menu_activity_main);
     }
 
     @Override

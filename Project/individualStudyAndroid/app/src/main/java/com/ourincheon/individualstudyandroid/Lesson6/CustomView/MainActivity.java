@@ -1,18 +1,19 @@
-package com.ourincheon.studyandroid.Week8;
+package com.ourincheon.individualstudyandroid.Lesson6.CustomView;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.ourincheon.individualstudyandroid.R;
+
 /**
- * Created by mijeong on 2017. 11. 9..
- * 나중에 PPT 보면서 따라해봐
+ * Created by mijeong on 2017. 12. 18..
  */
 
-public class day1109_SnackbarActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.lesson6_custom_view);
     }
 }
