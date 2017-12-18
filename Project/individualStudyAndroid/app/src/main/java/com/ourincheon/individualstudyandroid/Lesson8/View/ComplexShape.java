@@ -14,6 +14,7 @@ import android.view.View;
 public class ComplexShape extends View {
     public ComplexShape(Context context) {
         super(context);
+        setBackgroundColor(Color.BLUE);
     }
 
     @Override
@@ -21,12 +22,20 @@ public class ComplexShape extends View {
         super.onDraw(canvas);
 
         Paint paint = new Paint();
-        RectF r1 = new RectF(0, 0, 100, 100);
-        RectF r2 = new RectF(200, 20, 300, 120);
-        RectF r3 = new RectF(20, 140, 120, 240);
-        RectF r4 = new RectF(20, 260, 120, 360);
+        RectF r1 = new RectF(10, 10, 110, 110);
+        RectF r2 = new RectF(150, 10, 250, 110);
+        RectF r3 = new RectF(10, 140, 120, 240);
 
         paint.setColor(Color.YELLOW);
-        canvas.drawRoundRect(r1, 20, 20, paint);
+        canvas.drawRoundRect(r1, 5, 5, paint);
+        canvas.drawOval(r2, paint);
+
+        paint.setColor(Color.RED);
+        canvas.drawArc(r3, 120, 270, true, paint);
+
+        paint.setColor(Color.YELLOW);
+        paint.setStrokeWidth(10);
+        float[] pts = {10,250, 100,270, 100,270, 10,290, 10,290, 110, 310};
+        canvas.drawLines(pts, paint);
     }
 }
