@@ -13,7 +13,7 @@ import com.ourincheon.studyandroid.R;
  * Created by mijeong on 2017. 10. 18..
  */
 
-public class tday1018_touchEvent extends AppCompatActivity {
+public class day1018_touchEvent extends AppCompatActivity {
 
     TextView textView = (TextView)findViewById(R.id.textView);
 
