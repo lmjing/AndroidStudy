@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lesson6.Check_Radio_Rating.MainActivity">
+        <activity android:name=".Lesson8.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
