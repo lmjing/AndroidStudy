@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">individualStudyAndroid</string>
+    <string name="gallery1">Starry NightVincent Van Gogh</string>
+    <string name="gallery2">Still Life With Kettle Paul Cezanne</string>
+    <string name="gallery3">The Angelus Jean-Fancois Millet</string>
+    <string name="gallery4">The Cliff of Aval Claude Monet</string>
 </resources>
