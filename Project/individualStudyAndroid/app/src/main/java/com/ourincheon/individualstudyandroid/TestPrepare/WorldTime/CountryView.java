@@ -30,6 +30,7 @@ public class CountryView extends LinearLayout {
         super(context, attrs);
     }
 
+
     public void setData(Country country) {
         nameTextView.setText(country.name);
         timeTextView.setText(country.time);

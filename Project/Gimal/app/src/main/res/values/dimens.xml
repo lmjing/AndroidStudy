@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_padding">15dp</dimen>
+    <dimen name="masterpeices_space_bottom">5dp</dimen>
+    <dimen name="masterpeices_padding">5dp</dimen>
+    <dimen name="masterpeices_left_padding">15dp</dimen>
+</resources>

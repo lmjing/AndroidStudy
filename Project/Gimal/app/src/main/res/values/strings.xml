@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GimalTest</string>
+    <string name="author1">Vincent Van Gogh</string>
+    <string name="title1">Starry Night</string>
+    <string name="author2">Paul Cezanne</string>
+    <string name="title2">Still Life with Kettle</string>
+    <string name="author3">Jean-Francois Millet</string>
+    <string name="title3">The Angelus</string>
+    <string name="author4">Claude Monet</string>
+    <string name="title4">The Cliff of Aval</string>
+</resources>
